@@ -2,10 +2,10 @@
 
 ## สารบัญ
 
-- [Screenshot] (#screenshot)
-- [Link] (#link)
-- [สร้างด้วย] (#สร้างด้วย)
-- [ผู้เขียน] (#ผู้เขียน)
+- [Screenshot](#screenshot)
+- [Link](#link)
+- [สร้างด้วย](#สร้างด้วย)
+- [ผู้เขียน](#ผู้เขียน)
 
 ## Screenshot
 
@@ -19,7 +19,7 @@
 
 ## Link
 
-- Live Site URL: [GitHub page](https://your-live-site-url.com)
+- Live Site URL: [GitHub page](https://wannika123.github.io/portfolio/)
 
 ## สร้างด้วย
 
