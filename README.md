@@ -11,11 +11,11 @@
 
 - Desktop dark mode
 
-![Screen Shot 2567-03-09 at 11 56 16](https://github.com/Wannika123/portfolio/assets/142564014/84248df3-84f4-48d9-a56d-73863cef35fc)
+![Screen Shot 2567-04-23 at 20 14 16](https://github.com/Wannika123/portfolio/assets/142564014/3bf3f28c-95ea-4d4c-9e06-b1bcca5f5f73)
 
 - Mobile light mode
 
-![Screen Shot 2567-03-09 at 11 58 52](https://github.com/Wannika123/portfolio/assets/142564014/247dc52e-be6d-4ff2-9ceb-721cf0ce7726)
+![Screen Shot 2567-04-23 at 20 16 10](https://github.com/Wannika123/portfolio/assets/142564014/1ef2cb0f-1769-43ff-9c9e-fb7415001094)
 
 ## Link
 
