@@ -1,11 +1,11 @@
-# portfolio ของ วรรณิกา ควรขจร (มีนาคม 2024)
+# Wannika's portfolio 
 
-## สารบัญ
+## Table of contents
 
 - [Screenshot](#screenshot)
 - [Link](#link)
-- [สร้างด้วย](#สร้างด้วย)
-- [ผู้เขียน](#ผู้เขียน)
+- [Built with](#built-with)
+- [Author](#author)
 
 ## Screenshot
 
@@ -21,14 +21,14 @@
 
 - Live Site URL: [GitHub page](https://wannika123.github.io/portfolio/)
 
-## สร้างด้วย
+## Built with
 
 - HTML
 - CSS
 - JavaScript
 - Mobile-first workflow
 
-## ผู้เขียน
+## Author
 
 - GitHub - [@Wannika123](https://github.com/Wannika123)
 - Frontend Mentor - [@Wannika123](https://www.frontendmentor.io/profile/Wannika123)
