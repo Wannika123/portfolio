@@ -6,7 +6,7 @@ const menuBtn = document.getElementById('menu-btn');
 const navBar = document.getElementById('nav-bar');
 const navLinks = document.getElementsByClassName('nav-link');
 
-function showHideMenu() {
+function toggleMenu() {
     if (navBar.style.display === 'block') {
         navBar.style.display = 'none';
         menuBtn.innerHTML = `<svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd"/></svg>`
@@ -21,7 +21,7 @@ function hideMenu() {
     menuBtn.innerHTML = `<svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd"/></svg>`
 }
 
-menuBtn.addEventListener('click', showHideMenu);
+menuBtn.addEventListener('click', toggleMenu);
 
 const menuBtnStyle = window.getComputedStyle(menuBtn);
 const displayVal = menuBtnStyle.getPropertyValue('display');
@@ -35,10 +35,19 @@ if (displayVal === 'block') {    // prevent desktop version from getting this ef
 // set theme
 
 const radios = document.querySelectorAll('input[type=radio]');
+const nextLogo = document.getElementById('next-logo');
+
+nextLogo.fill = '#fff'
 
 function setTheme(theme) {
     localStorage.setItem("colorMode", theme);
     document.documentElement.classList = theme;
+
+    if (theme === 'dark') {
+        nextLogo.style.fill = '#fff'
+    } else {
+        nextLogo.style.fill = '#000'
+    }
 }
 
 radios.forEach(radio => {
@@ -51,8 +60,8 @@ window.onload = () => {
     let theme;
     if (!localStorage.getItem("colorMode")) {    // The first time the page is loaded, the color mode is set according to the system preference. (Use light theme if no preference is set)
         theme = window.matchMedia('(prefers-color-scheme: dark)').matches 
-            ?    'dark'
-            :    'light'      
+            ? 'dark'
+            : 'light'      
     } else {
         theme = localStorage.getItem("colorMode");
     }
