@@ -28,7 +28,7 @@
     * {
       scroll-behavior: smooth;
     }
-  }
+}
 
 * {
     box-sizing: border-box;
@@ -149,7 +149,7 @@ input[type="radio"] {
     height: 1rem;
     border-radius: 50%;
     z-index: 3;
-    transition: all 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
 }
 
 #light-theme:checked ~ #switcher {
@@ -157,7 +157,7 @@ input[type="radio"] {
 }
 
 #dark-theme:checked ~ #switcher {
-    right: 0.1rem !important;
+    left: 1.3rem !important;
 }
 
 main {
