@@ -37,8 +37,6 @@ if (displayVal === 'block') {    // prevent desktop version from getting this ef
 const radios = document.querySelectorAll('input[type=radio]');
 const nextLogo = document.getElementById('next-logo');
 
-nextLogo.fill = '#fff'
-
 function setTheme(theme) {
     localStorage.setItem("colorMode", theme);
     document.documentElement.classList = theme;
@@ -54,9 +52,9 @@ radios.forEach(radio => {
     radio.addEventListener('change', (e) => {
         setTheme(e.target.value)
     })
-})
+});
 
-window.onload = () => {
+window.addEventListener('DOMContentLoaded', () => {
     let theme;
     if (!localStorage.getItem("colorMode")) {    // The first time the page is loaded, the color mode is set according to the system preference. (Use light theme if no preference is set)
         theme = window.matchMedia('(prefers-color-scheme: dark)').matches 
@@ -67,4 +65,4 @@ window.onload = () => {
     }
     setTheme(theme); 
     document.getElementById(theme + '-theme').checked = true;
-}
+})

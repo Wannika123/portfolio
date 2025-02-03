@@ -62,8 +62,10 @@ header {
 
 #nav-bar {
     display: none;
+}
+
+#nav-bar ul {
     list-style: none;
-    padding: 0;
     position: absolute;
     width: 85%;
     left: 0;
@@ -90,17 +92,21 @@ li {
 }
 
 @media (min-width: 40rem) {
+    #nav-bar {
+        display: block;
+    }
     #menu-btn {
         display: none;
     }
-    #nav-bar {
+    #nav-bar ul {
+        width: unset;
+        text-align: left;
         position: unset;
         display: flex;
-        padding: 0;
-        margin: 0;
+        gap: 40px;
     }
-    li {
-        margin-right: 2rem;
+    #nav-bar ul li {
+        padding: 0;
     }
 }
 
