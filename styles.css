@@ -44,6 +44,9 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
+}
+
+header > div:first-of-type {
     background-color: var(--header-bg);
     color: var(--header-text);
     display: flex;
@@ -342,4 +345,13 @@ h1 {
 
 .github svg g {
     fill: var(--main-text);
+}
+
+/*==== BANNER =========*/
+.banner {
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
 }
